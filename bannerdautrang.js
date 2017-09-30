@@ -117,7 +117,7 @@ $(window).load(function() {
 			$(divpopup).attr('id', 'myModal');
 			$(divpopup).attr('class', 'linhnguyen-modal');
 			$( "body" ).append(divpopup);
-			$("#myModal").html("<a href='https://goo.gl/xosEfb' target='_blank'><img src='https://1.bp.blogspot.com/-VQ8yrDtXBPQ/Wc9AACsOtZI/AAAAAAAAAAk/FcqmPRmTpP8tX-bV3BxQ7N3p63q2s9WswCLcBGAs/s1600/banner-tadt.jpg' width='500px'/><br/><div class='linh-noidung'>Bồn Inox Tân Á Đại Thành</a>. Chuyên cung cấp các loại bồn inox, bồn nhựa, bồn năng lượng Tân Á Đại Thành. Hotline: 0909348384 </div>. <h2><a class='close-linhnguyen-modal'>X</a></h2>");
+			$("#myModal").html("<a href='https://goo.gl/xosEfb' target='_blank'><img src='https://1.bp.blogspot.com/-VQ8yrDtXBPQ/Wc9AACsOtZI/AAAAAAAAAAk/FcqmPRmTpP8tX-bV3BxQ7N3p63q2s9WswCLcBGAs/s1600/banner-tadt.jpg' width='500px'/></a><br/><div class='linh-noidung'><a href='http://tadt.com.vn/bon-inox/'>Bồn Inox Tân Á Đại Thành</a> - <a href='http://tadt.com.vn/bon-nuoc-nhua/'>Bồn nhựa</a> - <a href='http://tadt.com.vn/may-nuoc-nong-nang-luong-mat-troi/'>Máy nước nóng năng lượng mặt trời</a> - <a href='http://tadt.com.vn/chau-rua-chen-inox-dai-thanh/'>Chậu Inox</a>. Chuyên cung cấp các loại bồn inox, bồn nhựa, bồn năng lượng Tân Á Đại Thành. Hotline: 0909348384 </div>. <h2><a class='close-linhnguyen-modal'>X</a></h2>");
 			$('#myModal').linhnguyen($('#myModal').data());
 		}
 });
