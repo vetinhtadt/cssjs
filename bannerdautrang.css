@@ -53,3 +53,4 @@
 		z-index:100 !important;
 	}
 .linh-noidung{ padding:10px; background:#0072BB; color:#fff;}
+.linh-noidung a{color:#fff; font-weigh:bold;text-decoration: underline;}
