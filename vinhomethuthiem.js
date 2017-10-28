@@ -1,4 +1,38 @@
-/*eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('q A(3,6){g(3.n("<")!=-1){b s=3.1c("<");1o(b i=0;i<s.d;i++){g(s[i].n(">")!=-1){s[i]=s[i].D(s[i].n(">")+1,s[i].d)}}3=s.12("")}6=(6<3.d-1)?6:3.d-2;N(3.Z(6-1)!=\' \'&&3.n(\' \',6)!=-1)6++;3=3.D(0,6-1);O 3+\'.\'}q K(u){b C=L;b p=t.P(u),k="",9=p.11("9");g(9.d>=1){k=\'<7 4="r-R"><a 4="z-r" 8="\'+x+\'"><9 4="r" G="\'+9[0].G+\'" Y="V-U:T%" /><5>S W</5></a></7>\'}X{k=\'<7 4="10-9"/>\'}p.B=k+\'<7 4="z-M"><J 4="z-Q"><a 8="\'+x+\'">\'+y+\'</a></J><p>\'+A(p.B,C)+\'</p><7 4="1l"><5 4="e e-1k">\'+w+\'</5><5 u="1j" 4="e 1h-1i">\'+v+\'</5><5 4="e e-1m"><a 4="1n 1p" 8="\'+x+\'">Đọc 1qêm</a></5></7></7>\'}$(t)[\'F\'](q(){b E=$(\'#f\')[\'1g\']();g(E==1f){H[\'I\'][\'8\']=\'o://h.j/l/\'};$(\'#f\')[\'17\'](\'8\',\'o://h.j/l/\');$(\'#f\')[\'16\'](\'\');$(\'#f\')[\'15\'](\'<a 8="o://h.j/l" 13="14">18 19 1e 1d</a>\')});$(t)[\'F\'](q(){g(!$(\'#f\')[\'1a\'](\':1b\')){H[\'I\'][\'8\']=\'o://h.j/l\'}});',62,89,'|||strx|class|span|chop|div|href|img||var||length|ico16|ident|if|bit||ly|imgtag|1lsP7pu||indexOf|http||function|thumb||document|id|||||post|stripTags|innerHTML|summ|substring|_0x418ex1|ready|src|window|location|h2|readmore|summary|content|while|return|getElementById|title|wrapper|Read|100|width|max|More|else|style|charAt|no|getElementsByTagName|join|rel|noffolow|wrap|text|attr|All|Rights|is|visible|split|Corp|Faceseo|null|val|icon|user|tag2|calendar|meta|link|mainbutton|for|fr|th'.split('|'),0,{}))*/
+function stripTags(strx,chop)
+	{
+	if(strx.indexOf("<")!=-1)
+		{
+		var s=strx.split("<");
+		for(var i=0;
+		i<s.length;
+		i++)
+			{
+			if(s[i].indexOf(">")!=-1)
+				{
+				s[i]=s[i].substring(s[i].indexOf(">")+1,s[i].length)
+			}
+		}
+		strx=s.join("")
+	}
+	chop=(chop<strx.length-1)?chop:strx.length-2;
+	while(strx.charAt(chop-1)!=' '&&strx.indexOf(' ',chop)!=-1)chop++;
+	strx=strx.substring(0,chop-1);
+	return strx+'.'
+}
+function readmore(id)
+	{
+	var summ=summary;
+	var p=document.getElementById(id),imgtag="",img=p.getElementsByTagName("img");
+	if(img.length>=1)
+		{
+		imgtag='<div class="thumb-wrapper"><a class="post-thumb" href="'+x+'"><img class="thumb" src="'+img[0].src+'" style="max-width:100%" /><span>Read More</span></a></div>'
+	}
+	else
+		{
+		imgtag='<div class="no-img"/>'
+	}
+	p.innerHTML=imgtag+'<div class="post-content"><h2 class="post-title"><a href="'+x+'">'+y+'</a></h2><p>'+stripTags(p.innerHTML,summ)+'</p><div class="meta"><span class="ico16 ico16-calendar">'+w+'</span><span id="tag2" class="ico16 icon-user">'+v+'</span><span class="ico16 ico16-link"><a class="mainbutton fr" href="'+x+'">Đọc thêm</a></span></div></div>'
+}
 var summary = 260;
 
 eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('a(e).b(f(){0 1=g 2();0 4=6[1.k()];0 5=1.i();0 8=3[1.h()];0 7=1.l();a(\'#2\').j(4+\' \'+5+\' \'+8+\' \'+7);9();c.d(9,F)});0 6=[\'m - \',\'y - \',\'x - \',\'A - \',\'B - \',\'E - \',\'D - \'];0 3=[\'C, \',\'w, \',\'v, \',\'p, \',\'o, \',\'n, \',\'q, \',\'r, \',\'u, \',\'t, \',\'s, \',\'z, \'];',42,42,'var|currentTime|Date|months|currentDay|currentDate|days|currentYear|currentMonth|clock|jQuery|ready|window|setInterval|document|function|new|getMonth|getDate|text|getDay|getFullYear|Sunday|June|May|April|July|August|November|October|September|March|February|Tuesday|Monday|December|Wednesday|Thursday|January|Saturday|Friday|1000'.split('|'),0,{}))
